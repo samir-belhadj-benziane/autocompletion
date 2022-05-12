@@ -36,6 +36,11 @@ $chatinfos = $chat->getChatById($_GET["id"]);
             <h1 class="title-main"><?= $chatinfos["type"] ?></h1>
             <div class="slick-cards">
                 <img src="<?= $chatinfos["img"] ?>" alt="" class="slick-img">
+                <div class="describ">
+                    <h3>Description :</h3>
+                    <p><?= $chatinfos["describ"] ?></p>
+                </div>
+
             </div>
         </div>
     </main>

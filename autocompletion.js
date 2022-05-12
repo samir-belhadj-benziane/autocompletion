@@ -8,9 +8,9 @@ $(document).ready(function () {
           search: search,
         },
         function (data) {
-          console.log(data.length);
+          let datalength = data.length
           $(".listsearch").empty();
-          if (data <= 2) {
+          if (datalength <= 2) {
             $(".listsearch").append('<div class="listset">Type de chat introuvable ...</div>');
           } else {
             $(".listsearch").append(data);

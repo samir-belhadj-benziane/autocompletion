@@ -14,6 +14,6 @@ $chatinfos = $chat->getChatBySearch($search);
     <div class="listset">
         <img src="<?= $chatinfo['img']?>" alt="">
         <button type="button" class="btn-type-list"><?= $chatinfo['type']?></button>
-        <button type="button" class="btn-goto-list" data-id="<?= $chatinfo['type']?>" title="Acceder à la page">➜</button>
+        <button type="button" class="btn-goto-list" data-id="<?= $chatinfo['type']?>" title="Acceder à la page"><a href="element.php?id=<?= $chatinfo['type']?>">➜</a></button>
     </div>
 <?php } ?>
